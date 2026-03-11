@@ -801,7 +801,7 @@ async def ask_gemini(prompt: str, system_prompt: str | None = None, user_lang: s
             response = client.models.generate_content(model=model_name, contents=prompt, config=config)
             return response.text.strip() if response.text else "Извините, не могу ответить."
 @@ -391,100 +951,100 @@ def about_submenu_keyboard(lang: str = DEFAULT_LANG) -> InlineKeyboardMarkup:
-})
+
 
 # ═══════════════════════════════════════════════════════════════════════════
 # HANDLERS
